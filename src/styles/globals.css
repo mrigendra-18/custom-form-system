@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button[type='button'] {
+    background-color: #dc3545;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button[type='button']:hover {
+    background-color: #c82333;
+  }
+  
+  span.error {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+    font-weight: normal;
+  }
+  
+  span.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  select {
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  select:focus {
+    background-color: #ffffff;
+    border-color: #007bff;
+  }
+  
+  input[type='radio'],
+  input[type='checkbox'] {
+    margin-right: 10px;
+    accent-color: #007bff;
+  }
+  
+  div.checkbox-group,
+  div.radio-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  input[type="checkbox"].switch {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    appearance: none;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"].switch:checked {
+    background-color: #007bff;
+  }
+  
+  input[type="checkbox"].switch::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  input[type="checkbox"].switch:checked::before {
+    left: 23px;
+  }
+  
+  @media (max-width: 768px) {
+    form {
+      padding: 20px;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+    }
+  }
+  
